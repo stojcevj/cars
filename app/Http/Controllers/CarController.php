@@ -12,7 +12,7 @@ class CarController extends Controller
         $this->middleware('auth',['except' => ['index','show']]);
     }
 
-    public function createindx(){
+    public function create_view(){
         return view('create');
     }
 

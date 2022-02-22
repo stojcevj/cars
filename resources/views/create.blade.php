@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="container mt-3 mb-3">
-        <form method="POST" action="/create/new">
-            @method('GET')
+        <form method="POST" action="/create">
+
             @csrf
             <div class="row mb-3">
                 <label for="car" class="col-md-4 col-form-label text-md-end">{{ __('Car') }}</label>

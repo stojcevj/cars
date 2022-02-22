@@ -17,8 +17,8 @@ use App\Http\Controllers\CarController;
 
 Auth::routes();
 Route::get('/', [CarController::class, 'index']);
-Route::get('/create',[CarController::class, 'createindx']);
-Route::get('/create/new',[CarController::class, 'create']);
+Route::get('/create',[CarController::class, 'create_view']);
+Route::post('/create',[CarController::class, 'create']);
 Route::get('view/{id}',[CarController::class, 'show'])->where('id', '[0-9]+');
 Route::get('{id}/edit',[CarController::class, 'edit']);
 Route::put('{id}/edit',[CarController::class, 'update']);
