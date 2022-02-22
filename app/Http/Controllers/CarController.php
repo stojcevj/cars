@@ -23,22 +23,47 @@ class CarController extends Controller
         ]);
     }
     public function create(Request $request){
-        return CarsList::create([
+        CarsList::create([
             'marka' => $request->input('car'),
             'model' => $request->input('model'),
             'godina' => $request->input('year'),
             'user_id'=> Auth::user()->id
         ]);
+        return redirect('/home');
     }
 
     public function show($id){
         $car = CarsList::where('id',$id)->get();
         if(sizeof($car) == 0)
-            return $this->index();
+            return redirect('/');
         else {
             return view('view', [
                 'car' => $car
             ]);
         }
+    }
+
+    public function edit($id){
+        $car = CarsList::where('id', $id)->get();
+        if(sizeof($car) == 0)
+            return redirect('/');
+        else {
+            if(Auth::user()->id == $car[0]->user_id){
+                return view('edit', [
+                    'car' => $car
+                ]);
+            }else
+                return redirect('/');
+        }
+    }
+
+    public function update($id, Request $request){
+        CarsList::where('id', $id)
+            ->update([
+                'marka' => $request->input('car'),
+                'model' => $request->input('model'),
+                'godina' => $request->input('year'),
+        ]);
+        return redirect('/home');
     }
 }
