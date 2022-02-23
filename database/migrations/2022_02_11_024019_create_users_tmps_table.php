@@ -8,17 +8,19 @@ class CreateUsersTmpsTable extends Migration
 {
     public function up()
     {
-        Schema::create('users_tmp', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->string('surname');
-            $table->string('email')->unique();
-            $table->string('phone');
-            $table->string('city');
-            $table->string('municipality');
-            $table->string('password');
-            $table->timestamps();
-        });
+        if(!Schema::hasTable('personal_access_tokens')) {
+            Schema::create('users_tmp', function (Blueprint $table) {
+                $table->increments('id');
+                $table->string('name');
+                $table->string('surname');
+                $table->string('email')->unique();
+                $table->string('phone');
+                $table->string('city');
+                $table->string('municipality');
+                $table->string('password');
+                $table->timestamps();
+            });
+        }
     }
 
     /**
