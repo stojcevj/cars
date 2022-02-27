@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container mt-3 mb-3">
-        <form method="POST" action="/{{$car[0]->id}}/edit">
+        <form method="POST" enctype="multipart/form-data" action="/{{$car[0]->id}}/edit">
             @method('PUT')
             @csrf
             <div class="row mb-3">
@@ -21,6 +21,12 @@
                 <label for="year" class="col-md-4 col-form-label text-md-end">{{ __('Year') }}</label>
                 <div class="col-md-6">
                     <input id="year" type="text" class="form-control" name="year" value="{{$car[0]->godina}}">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="image" class="col-md-4 col-form-label text-md-end">{{ __('Choose Image') }}</label>
+                <div class="col-md-6">
+                    <input id="image" type="file" class="form-control" name="image">
                 </div>
             </div>
             <div class="row mb-0">

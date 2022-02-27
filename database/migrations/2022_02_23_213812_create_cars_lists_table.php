@@ -19,6 +19,7 @@ class CreateCarsListsTable extends Migration
                 $table->string('marka');
                 $table->string('model');
                 $table->string('godina');
+                $table->string('image');
                 $table->string('user_id');
                 $table->timestamps();
             });

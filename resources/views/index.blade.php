@@ -8,7 +8,7 @@
                     <a href="view/{{$car->id}}" style="text-decoration: none; color:black;">
                         <div class="col">
                             <div class="card">
-                                <img src="{{asset('img/merc.jpg')}}" class="card-img-top" alt="...">
+                                <img src="{{asset('storage/' . $car->image)}}" style="height:350px;"class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h2 class="card-title">{{$car->marka}}</h2>
                                     <h4 class="card-title">{{$car->model}}</h4>

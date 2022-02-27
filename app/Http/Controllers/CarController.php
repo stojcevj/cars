@@ -23,10 +23,15 @@ class CarController extends Controller
         ]);
     }
     public function create(Request $request){
+
+        $imageName = time().'.'.$request->file('image')->extension();
+        $request->file('image')->storeAs('public', $imageName);
+
         CarsList::create([
             'marka' => $request->input('car'),
             'model' => $request->input('model'),
             'godina' => $request->input('year'),
+            'image' => $imageName,
             'user_id'=> Auth::user()->id
         ]);
         return redirect('/home');
@@ -58,10 +63,15 @@ class CarController extends Controller
     }
 
     public function update($id, Request $request){
+
+        $imageName = time().'.'.$request->file('image')->extension();
+        $request->file('image')->storeAs('public', $imageName);
+
         CarsList::where('id', $id)
             ->update([
                 'marka' => $request->input('car'),
                 'model' => $request->input('model'),
+                'image' => $imageName,
                 'godina' => $request->input('year'),
         ]);
         return redirect('/home');
