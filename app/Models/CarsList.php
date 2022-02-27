@@ -15,6 +15,7 @@ class CarsList extends Model
         'marka',
         'model',
         'godina',
-        'user_id'
+        'user_id',
+        'image'
     ];
 }
