@@ -10,7 +10,7 @@
                                 <h2 class="card-title">{{$car[0]->marka}}</h2>
                                 <h4 class="card-title">{{$car[0]->model}}</h4>
                                 <h6 class="card-title">{{$car[0]->godina}}</h6>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">This is a longer jovan</p>
                             </div>
                         </div>
                     </div>
