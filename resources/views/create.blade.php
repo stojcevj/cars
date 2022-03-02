@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">{{ __('Add New Car ') }}</div>
+                    <div class="card-header">{{ __('Add New Car') }}</div>
                     <div class="card-body">
                         <form class="row" method="POST" action="/create" enctype="multipart/form-data">
                             @csrf
@@ -19,12 +19,6 @@
                                     <label for="model" class="col-md-2 col-form-label text-md-end">{{ __('Model') }}</label>
                                     <div class="col-md-3">
                                         <input id="model" type="text" class="form-control" name="model">
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <label for="car" class="col-md-2 col-form-label text-md-end">{{ __('Variant') }}</label>
-                                    <div class="col-md-3">
-                                        <input id="car" type="text" class="form-control" name="variant">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
@@ -152,14 +146,15 @@
                                 </div>
                                 <div class="row mb-3">
                                     <label for="year" class="col-md-2 col-form-label text-md-end">{{ __('Category') }}</label>
-                                    <div class="col-md-3">
-                                        <div class="mb-2 form-check form-check-inline">
+                                    <div class="col-md-9">
+                                        <div class="mb-2 form-check form-check-inline align-baseline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox1" name="category" value="option1">
-                                            <label class="form-check-label" for="inlineCheckbox1">Sedans</label>
+                                            <img src="{{asset('img/sedan.png')}}" width="65px" height="30px">
+                                            <span >Sedans</span>
                                         </div>
                                         <div class="mb-2 form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox2" name="category" value="option2">
-                                            <label class="form-check-label" for="inlineCheckbox2">Sports Car</label>
+                                            <label class="form-check-label" for="inlineCheckbox2">Sports Car / Coupe</label>
                                         </div>
                                         <div class="mb-2 form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox3" name="category" value="option3">
@@ -185,6 +180,31 @@
                                             <input class="form-check-input" type="radio" id="inlineCheckbox8" name="category" value="option8">
                                             <label class="form-check-label" for="inlineCheckbox8">Other</label>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="fuel" class="col-md-2 col-form-label text-md-end">{{ __('Fuel type') }}</label>
+                                    <div class="col-md-3">
+                                        <select name="fuel" style="padding: 10px;border:1px solid white;">
+                                            <option value="">Select fuel type</option>
+                                            <option value="Diesel">Diesel</option>
+                                            <option value="Petrol">Petrol</option>
+                                            <option value="Hybrid-Diesel">Hybrid-Diesel</option>
+                                            <option value="Hybrid-Petrol">Hybrid-Petrol</option>
+                                            <option value="Electric">Electric</option>
+                                            <option value="LPG">LPG</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="gear" class="col-md-2 col-form-label text-md-end">{{ __('Gear') }}</label>
+                                    <div class="col-md-3">
+                                        <select name="fuel" style="padding: 10px;border:1px solid white;">
+                                            <option value="">Select gear type</option>
+                                            <option value="Automatic">Automatic</option>
+                                            <option value="Manual">Manual</option>
+                                            <option value="Semi-Automatic">Semi-Automatic</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
