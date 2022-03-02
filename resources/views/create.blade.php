@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">{{ __('Add New Car 1') }}</div>
+                    <div class="card-header">{{ __('Add New Car ') }}</div>
                     <div class="card-body">
                         <form class="row" method="POST" action="/create" enctype="multipart/form-data">
                             @csrf
