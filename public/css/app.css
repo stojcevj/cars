@@ -11286,4 +11286,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.hover:hover{
+    transform: scale(1.1);
+}
 
