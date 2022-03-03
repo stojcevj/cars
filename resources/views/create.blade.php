@@ -12,7 +12,7 @@
                                 <div class="row mb-3">
                                     <label for="car" class="col-md-2 col-form-label text-md-end">{{ __('Make') }}</label>
                                     <div class="col-md-3">
-                                        <input id="car" type="text" class="form-control" name="car">
+                                        <input id="car" type="search" class="form-control" name="car">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
@@ -27,6 +27,16 @@
                                         <div class="dropdown">
                                             <select name="year" class="datefield year" style="padding: 10px;border:1px solid white;">
                                                 <option value="">Year</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2017">2017</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2015">2015</option>
+                                                <option value="2014">2014</option>
+                                                <option value="2013">2013</option>
                                                 <option value="2012">2012</option>
                                                 <option value="2011">2011</option>
                                                 <option value="2010">2010</option>
@@ -149,36 +159,56 @@
                                     <div class="col-md-9">
                                         <div class="mb-2 form-check form-check-inline align-baseline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox1" name="category" value="option1">
-                                            <img src="{{asset('img/sedan.png')}}" width="65px" height="30px">
-                                            <span >Sedans</span>
+                                            <label class="form-check-label" for="inlineCheckbox1">
+                                                <img src="{{asset('img/icons/sedan.png')}}" width="60px" height="30px">
+                                                <span>Sedans</span>
+                                            </label>
                                         </div>
                                         <div class="mb-2 form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox2" name="category" value="option2">
-                                            <label class="form-check-label" for="inlineCheckbox2">Sports Car / Coupe</label>
+                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                <img src="{{asset('img/icons/coupe.png')}}" width="60px" height="30px">
+                                                <span>Sports Car / Coupe</span>
+                                            </label>
                                         </div>
                                         <div class="mb-2 form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox3" name="category" value="option3">
-                                            <label class="form-check-label" for="inlineCheckbox3">Cabriolet / Roadster</label>
+                                            <label class="form-check-label" for="inlineCheckbox3">
+                                                <img src="{{asset('img/icons/coupe.png')}}" width="60px" height="30px">
+                                                <span>Cabriolet / Roadster</span>
+                                            </label>
                                         </div>
                                         <div class="mb-2 form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox4" name="category" value="option4">
-                                            <label class="form-check-label" for="inlineCheckbox4">SUV / Off-road Vehicle / Pickup Truck</label>
+                                            <label class="form-check-label" for="inlineCheckbox4">
+                                                <img src="{{asset('img/icons/coupe.png')}}" width="60px" height="30px">
+                                                <span>Small Car</span>
+                                            </label>
                                         </div>
                                         <div class="mb-2 form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox5" name="category" value="option5">
-                                            <label class="form-check-label" for="inlineCheckbox5">Small Car</label>
+                                            <label class="form-check-label" for="inlineCheckbox5">
+                                                <img src="{{asset('img/icons/coupe.png')}}" width="60px" height="30px">
+                                                <span>SUV / Off-road Vehicle / Pickup Truck</span>
+                                            </label>
                                         </div>
                                         <div class="mb-2 form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox6" name="category" value="option6">
-                                            <label class="form-check-label" for="inlineCheckbox6">Van / Minibus</label>
+                                            <label class="form-check-label" for="inlineCheckbox6">
+                                                <img src="{{asset('img/icons/coupe.png')}}" width="60px" height="30px">
+                                                <span>VAN / Minibus</span>
+                                            </label>
                                         </div>
                                         <div class="mb-2 form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox7" name="category" value="option7">
-                                            <label class="form-check-label" for="inlineCheckbox7">Estate Car</label>
+                                            <label class="form-check-label" for="inlineCheckbox7">
+                                                <img src="{{asset('img/icons/estate.png')}}" width="60px" height="30px">
+                                                <span>Estate Car</span>
+                                            </label>
                                         </div>
                                         <div class="mb-2 form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" id="inlineCheckbox8" name="category" value="option8">
-                                            <label class="form-check-label" for="inlineCheckbox8">Other</label>
+                                            <input class="form-check-input" type="radio" id="inlineCheckbox9" name="category" value="option9">
+                                            <label class="form-check-label" for="inlineCheckbox9">Other</label>
                                         </div>
                                     </div>
                                 </div>
