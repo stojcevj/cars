@@ -23,6 +23,7 @@ class CarController extends Controller
         ]);
     }
     public function create(Request $request){
+        dd($request);
         $imageName = time().'.'.$request->file('image')->extension();
         $request->file('image')->storeAs('public', $imageName);
 
