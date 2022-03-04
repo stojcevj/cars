@@ -4,7 +4,11 @@ var img = document.getElementById("image");
 var showimg = document.getElementById("imageadd");
 
 function select(id){
-    id.classList.toggle("img-selected-thumb");
+    var removeclass = showimg.children;
+    for(var i=0; i<removeclass.length; i++){
+        removeclass[i].classList.remove("img-selected-thumb");
+    }
+    id.classList.add("img-selected-thumb");
 }
 
 img.onchange = evt => {
