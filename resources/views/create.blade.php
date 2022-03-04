@@ -5,22 +5,32 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">{{ __('Add New Car') }}</div>
+                    <div class="bg-secondary bg-gradient card-header text-white">{{ __('Add New Car') }}</div>
                     <div class="card-body">
                         <form class="row" method="POST" action="/create" enctype="multipart/form-data">
                             @csrf
+
                                 <div class="row mb-3">
+
                                     <label for="car" class="col-md-2 col-form-label text-md-end">{{ __('Make') }}</label>
                                     <div class="col-md-3">
                                         <input id="car" type="search" class="form-control" name="car">
                                     </div>
+
+                                    <label for="kilometers" class="col-md-2 col-form-label text-md-end">{{ __('Kilometers') }}</label>
+                                    <div class="col-md-3">
+                                        <input id="kilometers" type="number" class="form-control" name="kilometers">
+                                    </div>
+
                                 </div>
+
                                 <div class="row mb-3">
                                     <label for="model" class="col-md-2 col-form-label text-md-end">{{ __('Model') }}</label>
                                     <div class="col-md-3">
-                                        <input id="model" type="text" class="form-control" name="model">
+                                        <input id="model" type="search" class="form-control" name="model">
                                     </div>
                                 </div>
+
                                 <div class="row mb-3">
                                     <label for="year" class="col-md-2 col-form-label text-md-end">{{ __('Year') }}</label>
                                     <div class="col-md-3">
@@ -154,64 +164,136 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="row mb-3">
-                                    <label for="year" class="col-md-2 col-form-label text-md-end">{{ __('Category') }}</label>
-                                    <div class="col-md-9">
+                                    <label for="category" class="col-md-2 col-form-label text-md-end">{{ __('Category') }}</label>
+
+                                    <div class="col-md-9" id="category">
                                         <div class="mb-2 form-check form-check-inline align-baseline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox1" name="category" value="option1">
                                             <label class="form-check-label" for="inlineCheckbox1">
-                                                <img src="{{asset('img/icons/sedan.png')}}" width="60px" height="30px">
+                                                <img class="hover" src="{{asset('img/icons/sedan.png')}}" width="60px" height="25px">
                                                 <span>Sedans</span>
                                             </label>
                                         </div>
+
                                         <div class="mb-2 form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox2" name="category" value="option2">
                                             <label class="form-check-label" for="inlineCheckbox2">
-                                                <img src="{{asset('img/icons/coupe.png')}}" width="60px" height="30px">
+                                                <img class="hover" src="{{asset('img/icons/sport.png')}}" width="60px" height="25px">
                                                 <span>Sports Car / Coupe</span>
                                             </label>
                                         </div>
+
                                         <div class="mb-2 form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox3" name="category" value="option3">
                                             <label class="form-check-label" for="inlineCheckbox3">
-                                                <img src="{{asset('img/icons/coupe.png')}}" width="60px" height="30px">
+                                                <img class="hover" src="{{asset('img/icons/convertible.png')}}" width="60px" height="25px">
                                                 <span>Cabriolet / Roadster</span>
                                             </label>
                                         </div>
+
                                         <div class="mb-2 form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox4" name="category" value="option4">
                                             <label class="form-check-label" for="inlineCheckbox4">
-                                                <img src="{{asset('img/icons/coupe.png')}}" width="60px" height="30px">
+                                                <img class="hover" src="{{asset('img/icons/small.png')}}" width="50px" height="25px">
                                                 <span>Small Car</span>
                                             </label>
                                         </div>
+
                                         <div class="mb-2 form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox5" name="category" value="option5">
                                             <label class="form-check-label" for="inlineCheckbox5">
-                                                <img src="{{asset('img/icons/coupe.png')}}" width="60px" height="30px">
+                                                <img class="hover" src="{{asset('img/icons/suv.png')}}" width="60px" height="30px">
                                                 <span>SUV / Off-road Vehicle / Pickup Truck</span>
                                             </label>
                                         </div>
+
                                         <div class="mb-2 form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox6" name="category" value="option6">
                                             <label class="form-check-label" for="inlineCheckbox6">
-                                                <img src="{{asset('img/icons/coupe.png')}}" width="60px" height="30px">
+                                                <img class="hover" src="{{asset('img/icons/van.png')}}" width="60px" height="30px">
                                                 <span>VAN / Minibus</span>
                                             </label>
                                         </div>
+
                                         <div class="mb-2 form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox7" name="category" value="option7">
                                             <label class="form-check-label" for="inlineCheckbox7">
-                                                <img src="{{asset('img/icons/estate.png')}}" width="60px" height="30px">
+                                                <img class="hover" src="{{asset('img/icons/estate.png')}}" width="60px" height="25px">
                                                 <span>Estate Car</span>
                                             </label>
                                         </div>
+
                                         <div class="mb-2 form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox9" name="category" value="option9">
                                             <label class="form-check-label" for="inlineCheckbox9">Other</label>
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="row mb-3 mt-2">
+                                    <label for="body-color" class="col-md-2 col-form-label text-md-end">{{ __('Body Color') }}</label>
+                                    <div class="col-md-9 p-2" id="body-color">
+
+                                        <div class="mb-2 form-check form-check-inline align-baseline color-div">
+                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxBlack" name="body-color" value="black">
+                                            <label style="background-color: black;" class="form-check-label" for="CheckBoxBlack"></label>
+                                        </div>
+
+                                        <div class="mb-2 form-check form-check-inline align-baseline color-div">
+                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxWhite" name="body-color" value="white">
+                                            <label style="background-color: white; border: 1px solid black;" class="form-check-label" for="CheckBoxWhite"></label>
+                                        </div>
+
+                                        <div class="mb-2 form-check form-check-inline align-baseline color-div">
+                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxRed" name="body-color" value="red">
+                                            <label style="background-color: red;" class="form-check-label" for="CheckBoxRed"></label>
+                                        </div>
+
+                                        <div class="mb-2 form-check form-check-inline align-baseline color-div">
+                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxGold" name="body-color" value="gold">
+                                            <label style="background-color: gold;" class="form-check-label" for="CheckBoxGold"></label>
+                                        </div>
+
+                                        <div class="mb-2 form-check form-check-inline align-baseline color-div">
+                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxGreen" name="body-color" value="green">
+                                            <label style="background-color: green;" class="form-check-label" for="CheckBoxGreen"></label>
+                                        </div>
+
+                                        <div class="mb-2 form-check form-check-inline align-baseline color-div">
+                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxBlue" name="body-color" value="blue">
+                                            <label style=" background-color: blue;" class="form-check-label" for="CheckBoxBlue"></label>
+                                        </div>
+
+                                        <div class="mb-2 form-check form-check-inline align-baseline color-div">
+                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxSilver" name="body-color" value="silver">
+                                            <label style="background-color: silver;" class="form-check-label" for="CheckBoxSilver"></label>
+                                        </div>
+
+                                        <div class="mb-2 form-check form-check-inline align-baseline color-div">
+                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxBronze" name="body-color" value="bronze">
+                                            <label style="background-color: sandybrown;" class="form-check-label" for="CheckBoxBronze"></label>
+                                        </div>
+
+                                        <div class="mb-2 form-check form-check-inline align-baseline color-div">
+                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxOrange" name="body-color" value="orange">
+                                            <label style="background-color: orange;" class="form-check-label" for="CheckBoxOrange"></label>
+                                        </div>
+
+                                        <div class="mb-2 form-check form-check-inline align-baseline color-div">
+                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxViolet" name="body-color" value="violet">
+                                            <label style="background-color: violet;" class="form-check-label" for="CheckBoxViolet"></label>
+                                        </div>
+
+                                        <div class="mb-2 form-check form-check-inline align-baseline color-div">
+                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxPink" name="body-color" value="pink">
+                                            <label style="background-color: pink;" class="form-check-label" for="CheckBoxPink"></label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                                 <div class="row mb-3">
                                     <label for="fuel" class="col-md-2 col-form-label text-md-end">{{ __('Fuel type') }}</label>
                                     <div class="col-md-3">
@@ -226,6 +308,7 @@
                                         </select>
                                     </div>
                                 </div>
+
                                 <div class="row mb-3">
                                     <label for="gear" class="col-md-2 col-form-label text-md-end">{{ __('Gear') }}</label>
                                     <div class="col-md-3">
@@ -237,12 +320,14 @@
                                         </select>
                                     </div>
                                 </div>
+
                                 <div class="row mb-3">
                                     <label for="image" class="col-md-2 col-form-label text-md-end">{{ __('Choose Image') }}</label>
                                     <div class="col-md-3">
                                         <input id="image" type="file" class="form-control" name="image">
                                     </div>
                                 </div>
+
                                 <div class="row mb-0">
                                     <div class="col-md-6 offset-md-6">
                                         <button type="submit" class="btn btn-primary pe-5" style="padding-left: 3rem">
@@ -250,6 +335,7 @@
                                         </button>
                                     </div>
                                 </div>
+
                         </form>
                     </div>
                 </div>
