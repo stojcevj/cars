@@ -15,14 +15,14 @@ img.onchange = evt => {
     var files = img.files;
 
     for(var j=0; j<files.length; j++){
-        var i = document.createElement("img");
-        i.src = URL.createObjectURL(files[j]);
-        i.onclick = function (){
+        var element = document.createElement("img");
+        element.src = URL.createObjectURL(files[j]);
+        element.onclick = function (){
             select(this);
         }
-        i.height = "200";
-        i.width = "200";
-        i.classList.add("img-add");
-        showimg.append(i);
+        element.height = "200";
+        element.width = "200";
+        element.classList.add("img-add");
+        showimg.append(element);
     }
 }
