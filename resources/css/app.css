@@ -1,24 +1,63 @@
 .hover:hover{
     transform: scale(1.1);
 }
-.color-div{
-    border-radius: 5px;
+.gear-div{
+    margin-right:-5px;
+    padding: 0;
 }
 .input-opacity{
     opacity: 0;
 }
 .color-div label {
-    padding: 10px 20px;
+    padding: 5px 5px;
     font-family: sans-serif, Arial;
     font-size: 16px;
-    border-radius: 4px;
+    font-weight:bold;
+    border-radius: 15px;
+    width: 70px;
+}
+.fuel-gear label{
+    padding: 4px 4px;
+    font-family: sans-serif, Arial;
+    font-size: 15px;
+    font-weight:bold;
+    border: 1px solid black;
+    margin: 0;
 }
 .color-div label:hover{
     transform: scale(1.1);
 }
+.fuel-gear label:hover{
+    background-color: lightgray;
+}
+.fuel-gear input[type="radio"]:checked + label{
+    background-color: lightgray;
+    border: 1px dashed black;
+}
+@keyframes shake {
+    0%   {transform: rotate(5deg)}
+    50%  {transform: rotate(-5deg)}
+    100%  {transform: rotate(5deg)}
+}
 .color-div input[type="radio"]:checked + label {
-    border: 2px solid black;
+    animation: shake;
+    animation-duration: 200ms;
+    transform: scale(1.1);
+}
+.color-div input[type="radio"]:checked + label:after {
+   position: absolute;
+    left: 75px;
+    content: '✓';
+    color: black;
+}
+.img-add{
+    margin: 20px;
+}
+.img-add-show{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-selected-thumb{
     transform: scale(1.1);
     opacity: 50%;
 }
-

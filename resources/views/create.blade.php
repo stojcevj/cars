@@ -233,58 +233,57 @@
 
                                         <div class="mb-2 form-check form-check-inline align-baseline color-div">
                                             <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxBlack" name="body-color" value="black">
-                                            <label style="background-color: black;" class="form-check-label" for="CheckBoxBlack"></label>
+                                            <label style="color:white;background-color: black;" class="form-check-label" for="CheckBoxBlack">Black</label>
                                         </div>
 
                                         <div class="mb-2 form-check form-check-inline align-baseline color-div">
                                             <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxWhite" name="body-color" value="white">
-                                            <label style="background-color: white; border: 1px solid black;" class="form-check-label" for="CheckBoxWhite"></label>
+                                            <label style="background-color: white; border: 1px solid black;" class="form-check-label" for="CheckBoxWhite">White</label>
                                         </div>
 
                                         <div class="mb-2 form-check form-check-inline align-baseline color-div">
                                             <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxRed" name="body-color" value="red">
-                                            <label style="background-color: red;" class="form-check-label" for="CheckBoxRed"></label>
+                                            <label style="color:white;background-color: red;" class="form-check-label" for="CheckBoxRed">Red</label>
                                         </div>
 
                                         <div class="mb-2 form-check form-check-inline align-baseline color-div">
                                             <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxGold" name="body-color" value="gold">
-                                            <label style="background-color: gold;" class="form-check-label" for="CheckBoxGold"></label>
+                                            <label style="background-color: gold;" class="form-check-label" for="CheckBoxGold">Gold</label>
                                         </div>
 
                                         <div class="mb-2 form-check form-check-inline align-baseline color-div">
                                             <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxGreen" name="body-color" value="green">
-                                            <label style="background-color: green;" class="form-check-label" for="CheckBoxGreen"></label>
+                                            <label style="color:white; background-color: green;" class="form-check-label" for="CheckBoxGreen">Green</label>
                                         </div>
 
                                         <div class="mb-2 form-check form-check-inline align-baseline color-div">
                                             <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxBlue" name="body-color" value="blue">
-                                            <label style=" background-color: blue;" class="form-check-label" for="CheckBoxBlue"></label>
+                                            <label style="color:white; background-color: blue;" class="form-check-label" for="CheckBoxBlue">Blue</label>
                                         </div>
 
                                         <div class="mb-2 form-check form-check-inline align-baseline color-div">
                                             <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxSilver" name="body-color" value="silver">
-                                            <label style="background-color: silver;" class="form-check-label" for="CheckBoxSilver"></label>
+                                            <label style="background-color: silver;" class="form-check-label" for="CheckBoxSilver">Silver</label>
                                         </div>
 
                                         <div class="mb-2 form-check form-check-inline align-baseline color-div">
                                             <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxBronze" name="body-color" value="bronze">
-                                            <label style="background-color: sandybrown;" class="form-check-label" for="CheckBoxBronze"></label>
+                                            <label style="background-color: sandybrown;" class="form-check-label" for="CheckBoxBronze">Bronze</label>
                                         </div>
 
                                         <div class="mb-2 form-check form-check-inline align-baseline color-div">
                                             <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxOrange" name="body-color" value="orange">
-                                            <label style="background-color: orange;" class="form-check-label" for="CheckBoxOrange"></label>
+                                            <label style="background-color: orange;" class="form-check-label" for="CheckBoxOrange">Orange</label>
                                         </div>
 
                                         <div class="mb-2 form-check form-check-inline align-baseline color-div">
-                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxViolet" name="body-color" value="violet">
-                                            <label style="background-color: violet;" class="form-check-label" for="CheckBoxViolet"></label>
+                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxPurple" name="body-color" value="purple">
+                                            <label style="color:white; background-color: purple;" class="form-check-label" for="CheckBoxPurple">Purple</label>
                                         </div>
 
                                         <div class="mb-2 form-check form-check-inline align-baseline color-div">
-                                            <span>Pink</span>
                                             <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxPink" name="body-color" value="pink">
-                                            <label style="background-color: pink;" class="form-check-label" for="CheckBoxPink"></label>
+                                            <label style="background-color: pink;" class="form-check-label" for="CheckBoxPink">Pink</label>
                                         </div>
 
                                     </div>
@@ -292,33 +291,52 @@
 
                                 <div class="row mb-3">
                                     <label for="fuel" class="col-md-2 col-form-label text-md-end">{{ __('Fuel type') }}</label>
-                                    <div class="col-md-3">
-                                        <select name="fuel" style="padding: 10px;border:1px solid white;">
-                                            <option value="">Select fuel type</option>
-                                            <option value="Diesel">Diesel</option>
-                                            <option value="Petrol">Petrol</option>
-                                            <option value="Hybrid-Diesel">Hybrid-Diesel</option>
-                                            <option value="Hybrid-Petrol">Hybrid-Petrol</option>
-                                            <option value="Electric">Electric</option>
-                                            <option value="LPG">LPG</option>
-                                        </select>
+                                    <div id="fuel" class="col-md-3 fuel-gear">
+                                        <div class="mb-2 form-check form-check-inline align-baseline gear-div">
+                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxDiesel" name="fuel" value="diesel">
+                                            <label style="" class="form-check-label" for="CheckBoxDiesel">Diesel</label>
+                                        </div>
+                                        <div class="mb-2 form-check form-check-inline align-baseline gear-div">
+                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxPetrol" name="fuel" value="petrol">
+                                            <label style="" class="form-check-label" for="CheckBoxPetrol">Petrol</label>
+                                        </div>
+                                        <div class="mb-2 form-check form-check-inline align-baseline gear-div">
+                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxHybrid-Diesel" name="fuel" value="hybrid-diesel">
+                                            <label style="" class="form-check-label" for="CheckBoxHybrid-Diesel">Hybrid-Diesel</label>
+                                        </div>
+
+                                        <div class="mb-2 form-check form-check-inline align-baseline gear-div">
+                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxHybrid-Petrol" name="fuel" value="hybrid-petrol">
+                                            <label style="" class="form-check-label" for="CheckBoxHybrid-Petrol">Hybrid-Petrol</label>
+                                        </div>
+                                        <div class="mb-2 form-check form-check-inline align-baseline gear-div">
+                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxElectric" name="fuel" value="electric">
+                                            <label style="" class="form-check-label" for="CheckBoxElectric">Electric</label>
+                                        </div>
+                                        <div class="mb-2 form-check form-check-inline align-baseline gear-div">
+                                            <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxLPG" name="fuel" value="lpg">
+                                            <label style="" class="form-check-label" for="CheckBoxLPG">LPG</label>
+                                        </div>
+
                                     </div>
                                         <label for="gear" class="col-md-2 col-form-label text-md-end">{{ __('Gear') }}</label>
-                                        <div class="col-md-3">
-                                            <select name="fuel" style="padding: 10px;border:1px solid white;">
-                                                <option value="">Select gear type</option>
-                                                <option value="Automatic">Automatic</option>
-                                                <option value="Manual">Manual</option>
-                                                <option value="Semi-Automatic">Semi-Automatic</option>
-                                            </select>
+                                        <div id="gear" class="col-md-3 fuel-gear">
+                                            <div class="mb-2 form-check form-check-inline align-baseline gear-div">
+                                                <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxAutomatic" name="gear" value="automatic">
+                                                <label style="" class="form-check-label" for="CheckBoxAutomatic">Automatic</label>
+                                            </div>
+                                            <div class="mb-2 form-check form-check-inline align-baseline gear-div">
+                                                <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxManual" name="gear" value="manual">
+                                                <label style="" class="form-check-label" for="CheckBoxManual">Manual</label>
+                                            </div>
+                                            <div class="mb-2 form-check form-check-inline align-baseline gear-div">
+                                                <input class="form-check-input radio-custom input-opacity" type="radio" id="CheckBoxSemi-Automatic" name="gear" value="semiautomatic">
+                                                <label style="" class="form-check-label" for="CheckBoxSemi-Automatic">Semi-Automatic</label>
+                                            </div>
                                         </div>
                                     </div>
 
                                 <div class="row mb-3">
-                                    <label for="km" class="col-md-2 col-form-label text-md-end">{{ __('Kilometres') }}</label>
-                                    <div class="col-md-3">
-                                        <input id="km" type="number" class="form-control" name="km">
-                                    </div>
                                     <label for="power" class="col-md-2 col-form-label text-md-end">{{ __('Power (Hp)') }}</label>
                                     <div class="col-md-3">
                                         <input id="power" type="number" class="form-control" name="power">
@@ -328,12 +346,19 @@
                                 <div class="row mb-3">
                                     <label for="image" class="col-md-2 col-form-label text-md-end">{{ __('Choose Image') }}</label>
                                     <div class="col-md-3">
-                                        <input id="image" type="file" class="form-control" name="image">
+                                        <input multiple id="image" type="file" class="form-control mb-3" name="image">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div style="display: inherit" class="col-md-10">
+                                        <label class="col-md-2"></label>
+                                        <div class="img-add-show" id="imageadd"></div>
                                     </div>
                                 </div>
 
                                 <div class="row mb-0">
-                                    <div class="col-md-6 offset-md-6">
+                                    <div class="col-md-2 offset-md-10">
                                         <button type="submit" class="btn btn-primary pe-5" style="padding-left: 3rem">
                                             {{ __('Create') }}
                                         </button>
