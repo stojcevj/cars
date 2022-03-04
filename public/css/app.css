@@ -11304,7 +11304,7 @@ textarea.form-control-lg {
 .color-div label:hover{
     transform: scale(1.1);
 }
-input[type="radio"]:checked + label {
+.color-div input[type="radio"]:checked + label {
     border: 2px solid black;
     transform: scale(1.1);
     opacity: 50%;
