@@ -169,63 +169,63 @@
                                     <label for="category" class="col-md-2 col-form-label text-md-end">{{ __('Category') }}</label>
 
                                     <div class="col-md-9" id="category">
-                                        <div class="mb-2 form-check form-check-inline align-baseline">
+                                        <div class="mb-2 hover form-check form-check-inline align-baseline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox1" name="category" value="option1">
                                             <label class="form-check-label" for="inlineCheckbox1">
-                                                <img class="hover" src="{{asset('img/icons/sedan.png')}}" width="60px" height="25px">
+                                                <img src="{{asset('img/icons/sedan.png')}}" width="60px" height="25px">
                                                 <span>Sedans</span>
                                             </label>
                                         </div>
 
-                                        <div class="mb-2 form-check form-check-inline">
+                                        <div class="mb-2 hover form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox2" name="category" value="option2">
                                             <label class="form-check-label" for="inlineCheckbox2">
-                                                <img class="hover" src="{{asset('img/icons/sport.png')}}" width="60px" height="25px">
+                                                <img src="{{asset('img/icons/sport.png')}}" width="60px" height="25px">
                                                 <span>Sports Car / Coupe</span>
                                             </label>
                                         </div>
 
-                                        <div class="mb-2 form-check form-check-inline">
+                                        <div class="mb-2 hover form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox3" name="category" value="option3">
                                             <label class="form-check-label" for="inlineCheckbox3">
-                                                <img class="hover" src="{{asset('img/icons/convertible.png')}}" width="60px" height="25px">
+                                                <img src="{{asset('img/icons/convertible.png')}}" width="60px" height="25px">
                                                 <span>Cabriolet / Roadster</span>
                                             </label>
                                         </div>
 
-                                        <div class="mb-2 form-check form-check-inline">
+                                        <div class="mb-2 hover form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox4" name="category" value="option4">
                                             <label class="form-check-label" for="inlineCheckbox4">
-                                                <img class="hover" src="{{asset('img/icons/small.png')}}" width="50px" height="25px">
+                                                <img src="{{asset('img/icons/small.png')}}" width="50px" height="25px">
                                                 <span>Small Car</span>
                                             </label>
                                         </div>
 
-                                        <div class="mb-2 form-check form-check-inline">
+                                        <div class="mb-2 hover form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox5" name="category" value="option5">
                                             <label class="form-check-label" for="inlineCheckbox5">
-                                                <img class="hover" src="{{asset('img/icons/suv.png')}}" width="60px" height="30px">
+                                                <img src="{{asset('img/icons/suv.png')}}" width="60px" height="30px">
                                                 <span>SUV / Off-road Vehicle / Pickup Truck</span>
                                             </label>
                                         </div>
 
-                                        <div class="mb-2 form-check form-check-inline">
+                                        <div class="mb-2 hover form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox6" name="category" value="option6">
                                             <label class="form-check-label" for="inlineCheckbox6">
-                                                <img class="hover" src="{{asset('img/icons/van.png')}}" width="60px" height="30px">
+                                                <img src="{{asset('img/icons/van.png')}}" width="60px" height="30px">
                                                 <span>VAN / Minibus</span>
                                             </label>
                                         </div>
 
-                                        <div class="mb-2 form-check form-check-inline">
+                                        <div class="mb-2 hover form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox7" name="category" value="option7">
                                             <label class="form-check-label" for="inlineCheckbox7">
-                                                <img class="hover" src="{{asset('img/icons/estate.png')}}" width="60px" height="25px">
+                                                <img src="{{asset('img/icons/estate.png')}}" width="60px" height="25px">
                                                 <span>Estate Car</span>
                                             </label>
                                         </div>
 
-                                        <div class="mb-2 form-check form-check-inline">
+                                        <div class="mb-2 hover form-check form-check-inline">
                                             <input class="form-check-input" type="radio" id="inlineCheckbox9" name="category" value="option9">
                                             <label class="form-check-label" for="inlineCheckbox9">Other</label>
                                         </div>
